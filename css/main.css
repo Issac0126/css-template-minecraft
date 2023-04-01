@@ -1,0 +1,562 @@
+/* reset css */
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css');
+/* Noto-sans font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*  font-family: 'Noto Sans KR', sans-serif;  */
+/* font-family: 'Noto Sans', sans-serif; */
+
+
+body {
+    font-family: 'Noto Sans', 'Noto Sans KR', sans-serif;
+}
+@font-face {
+    font-family: 'NeoDunggeunmo-realfont';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url(./font/MinecraftTen-VGORe.ttf);
+}
+
+
+
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* .empty{
+    height: 83px;
+} */
+
+
+/* header */
+nav.top{
+    height: 36px;
+    background-color: #000000;
+
+    position: sticky;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    padding: 0px 30px;
+}
+nav.top ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    color: #A0E080;
+    font-size: 12px;
+    font-weight: 700;
+
+    margin-bottom: -1px;
+}
+nav.top ul li{
+    width: 80px;
+    box-sizing: border-box;
+    padding: 12px;
+}
+nav.top ul li a:hover{
+    color: white;
+}
+
+
+
+header{
+    background: #171615;
+    /* padding: 10px 0; */
+    height: 83px;
+    
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    box-sizing: border-box;
+}
+header .inner-header{
+    color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 0px 20px; */
+    padding: 16px;
+}
+
+/* 마인크래프트 로고 */
+header .logo{
+    margin: 0 auto;
+    width: 240px;
+
+    position: absolute;
+    right: 50%;
+    top: 41.5px;
+    transform: translate(50%, -50%);
+}
+header .logo img{
+    width: 100%;
+}
+
+/* 마인크래프트 좌측 메뉴 */
+header ul.header-menu{
+    display: flex;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+header ul.header-menu li{
+    display: flex;
+    padding: 0 12px;
+}
+header ul.header-menu li a{
+    color: white;
+    display: flex;
+}
+header ul.header-menu li a:hover{
+    color: #A0E080;
+}
+
+header ul.header-menu li a div{
+    margin-left: 5px;
+}
+
+header ul.header-menu li a .white-arrow{
+}
+header ul.header-menu li a .green-arrow{
+    display: none;
+}
+header ul.header-menu li a:hover .green-arrow{
+    display: block;
+    transform: scaleY(-1);
+}
+header ul.header-menu li a:hover .white-arrow{
+    display: none;
+}
+
+header ul.header-menu li a .pickax-green{
+    display: none;
+}
+header ul.header-menu li a:hover .pickax-green{
+    display: block;
+}
+header ul.header-menu li a .pickax{
+}
+header ul.header-menu li a:hover .pickax{
+    display: none;
+}
+
+
+/* 마인크래프트 구매하기 */
+header .header-buy {
+    font-weight: 700;
+    font-size: 18px;
+}
+header .header-buy a{
+    color: white;
+    display: block;
+    padding: 12px 24px;
+    
+    background-color: #3C8527;
+    border-bottom: 4px solid #2A641C;
+    border-top: 4px solid #52A535;
+    box-sizing: border-box;
+    position: relative;
+}
+header .header-buy a::before{
+    content: '';
+    width: 4px;
+    height: 100%;
+    background-color: #2A641C;
+
+    position: absolute;
+    left: -4px;
+    top: 0;
+}
+header .header-buy a::after{
+    content: '';
+    width: 4px;
+    height: 100%;
+    background-color: #2A641C;
+
+    position: absolute;
+    right: -4px;
+    top: 0;
+}
+
+header .header-buy a:hover{
+    background-color: #367726;
+}
+/* END header */
+
+
+
+@media screen and (max-width: 1199px) {
+    header .logo{
+        width: 175px;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    header{
+        height: 108px;
+    }
+
+    header .logo{
+        width: 175px;
+    }
+
+    header .header-buy a{
+        color: #A0E080;
+        display: block;
+        padding: 0 0;
+        width: fit-content;
+        height: fit-content;
+
+        background-color: #000000;
+        border-bottom: 0px solid #2A641C;
+        border-top: 0px solid #52A535;
+    }
+    header .header-buy a::before{
+        width: 0px;
+    }
+    header .header-buy a::after{
+        width: 0px;
+    }
+    header .header-buy a:hover{
+        background-color: inherit;
+    }
+    header .header-buy {
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    header .inner-header{
+        justify-content: space-between;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+
+        box-sizing: border-box;
+        
+    }
+}
+
+@media screen and (max-width: 766px) {
+}
+
+@media screen and (max-width: 540px){
+    header ul.header-menu{
+        display: none;
+    }
+    header .header-buy {
+        display: none;
+    }
+    header{
+        height: 60px;
+    }
+
+    header .logo{
+        top: 30px;
+    }
+    nav.top ul{
+        display: none;
+    }
+
+}
+
+
+
+/* footer */
+footer .social-footer {
+    background-color: black;
+    padding: 15px 0 30px;
+}
+
+footer .social-footer h2 {
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+footer .social-footer .follow {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 30px 0 10px;
+}
+
+footer .social-footer .follow li {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: #252525;
+    border-radius: 50%;
+    margin: 0 50px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+}
+
+footer .social-footer .follow li:nth-child(1):hover {
+    background-color: red;
+}
+
+footer .social-footer .follow li:nth-child(2):hover {
+    background-color: #F4108F;
+}
+
+footer .social-footer .follow li:nth-child(3):hover {
+    background-color: #157BF1;
+}
+
+footer .social-footer .follow li:nth-child(4):hover {
+    background-color: #18A0F5;
+}
+
+footer .social-footer .follow li:nth-child(5):hover {
+    background-color: #FF4200;
+}
+
+
+.footer-container {
+    background: #111111;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 40px 0;
+}
+
+.footer-container .brandinfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-container .brandinfo .logos {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer-container .brandinfo .logocopy {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 20px 20px;
+}
+
+.footer-container .brandinfo .logos .mojang {
+    width: 130px;
+    height: 111px;
+    background: url(../img_ha/footer_img1.png);
+    margin-right: 50px;
+}
+
+.footer-container .brandinfo .logos .xbox {
+    width: 203px;
+    height: 111px;
+    background: url(../img_ha/Logo_\ Xbox_Game_Studio.png);
+}
+
+.footer-container .brandinfo .copyright {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container .brandinfo .copyright p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.footer-container .brandinfo .copyright ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.footer-container .brandinfo .copyright ul li {
+    margin-right: 15px;
+    color: #a0e080;
+    transition: 0.8s;
+    font-size: 12px;
+}
+
+.footer-container .brandinfo .copyright ul li:nth-child(2) {
+    color: white;
+}
+
+.footer-container .brandinfo .copyright ul li:hover {
+    color: white;
+    transition: 0.6s;
+}
+
+.footer-container .navlists {
+    display: flex;
+    margin-left: 50px;
+}
+
+.footer-container .navlists .navlists-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+
+.footer-container .navlists .navlists-column h2 {
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+}
+
+.footer-container .navlists .navlists-column ul li {
+    color: #a0e080;
+    transition: 0.6s;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.footer-container .navlists .navlists-column ul li a:hover {
+    color: white;
+    transition: 0.8s;
+}
+
+.bottom-footer {
+    background: #313131;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 12px;
+    color: #fff;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    padding: 0 100px;
+}
+
+.bottom-footer .branding {
+    position: absolute;
+    left: 15%;
+}
+.bottom-footer .branding i {
+    scale: 1.6;
+    margin-right: 10px;
+}
+
+
+.bottom-footer .branding-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-footer .branding-nav ul li {
+    margin: 0 10px;
+}
+
+
+
+.bottom-footer .branding-logo img {
+    scale: 0.2;
+    position: absolute;
+    bottom: -40%;
+    right: 2%;
+}
+
+#copyright2 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto 0;
+    display: none;    
+}
+
+
+#copyright2 p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+#copyright2 ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#copyright2 ul li {
+    margin-right: 15px;
+    color: #a0e080;
+    transition: 0.8s;
+    font-size: 12px;
+}
+
+#copyright2 ul li:nth-child(2) {
+    color: white;
+}
+
+#copyright2 ul li:hover {
+    color: white;
+    transition: 0.8s;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+/* footer end */
+
+
+@media screen and (max-width: 768px) {
+    .bottom-footer {
+        display: none;
+    }
+
+    .bottom-footer2 {
+        background: #313131;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-content: start;
+        color: white;
+    }
+
+    .bottom-footer2 .branding {
+        padding: 20px;
+        display: flex;
+        position: relative;
+    }
+
+    .bottom-footer2 .branding-nav ul {
+        display: flex;
+        margin-left: 20px;
+    }
+    .bottom-footer2 .branding-nav ul li {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .bottom-footer2 .branding .branding-logo img{
+        scale: 0.2;
+        position: absolute;
+        right: -200px;
+        top: -30px;
+    }
+
+    footer .social-footer .follow li {
+        margin: 30px 30px;
+    }
+}

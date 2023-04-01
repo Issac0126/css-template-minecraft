@@ -1,0 +1,702 @@
+/* reset css */
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css');
+@import url(./main.css);
+
+
+
+br.mo{  /* 모바일 버전에서는 br이 작동X */
+    display: none;
+}
+
+
+
+/* ← → 초록 버튼 */
+section .other-button a {
+    width: 50px;
+    height: 50px;
+    background-color: #3B8526;
+    border-bottom: 3px solid #2A631C;
+    border-top: 3px solid #6BC349;
+
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+section .other-button a:hover {
+    background-color: #322f2e;
+    border: 3px solid #1157be;
+}
+
+
+
+
+
+
+
+body {
+    background-image: url(../img-LEE/bg-wool-dark.png);
+    background-repeat: repeat;
+    background-size: 10%;
+}
+
+
+/* section.visual */
+section.visual {
+    background-color: #000;
+    color: white;
+    width: 100%;
+}
+
+section.visual .visual-bg {
+    margin: 0 auto;
+    background: url(../img-LEE/main.jpg) no-repeat center / contain;
+    max-width: 1200px;
+    background-size: cover;
+    height: 600px;
+}
+
+section.visual .visual-div {
+    padding: 100px 0 0 100px;
+    width: 540px;
+    line-height: 1.2;
+}
+
+section.visual h1 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+section.visual h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+section.visual a h3 {
+    width: 100%;
+    font-size: 19.2px;
+    font-weight: 600;
+    padding: 22.8px 52px;
+    border-radius: 1px;
+    margin-top: 45px;
+    box-sizing: border-box;
+
+    background-color: #3B8526;
+    border-bottom: 4px solid #2A631C;
+    border-top: 4px solid #6BC349;
+    transition: 0.3s;
+}
+
+section.visual a {
+    display: block;
+    width: fit-content;
+    height: 100%;
+}
+
+section.visual h3:hover {
+    background-color: #272524;
+    padding: 23.8px 51px;
+    border: 1px solid white;
+}
+/* END section.visual */
+
+
+/*  section.other */
+section.other {
+    background-color: #EEEEEE;
+    margin: 30px auto;
+    width: 1140px;
+    padding: 75px 0 100px;
+}
+
+section.other h1 {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 0 0 50px;
+    text-align: center;
+}
+
+section.other .inner {
+    display: flex;
+    padding: 0 25px;
+}
+
+section.other .inner div {
+    margin: 0 2%;
+}
+section.other .inner .other-button {
+    margin-top: 11%;
+}
+section.other .inner .other-game {
+    width: 240px;
+}
+section.other .inner .other-game a {
+    display: block;
+    margin-bottom: 6px;
+}
+section.other .inner .other-game a:hover h2 {
+    color: #000;
+}
+
+section.other .inner .other-game img {
+    width: 100%;
+    transition: 1s;
+    border: 0px solid #6BC349;
+}
+section.other .inner .other-game a img:hover {
+    transform: scale(1.07);
+    border: 2px solid #6BC349;
+    transition-timing-function: ease;
+}
+
+section.other .inner .other-game h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 25px;
+    text-align: center;
+    line-height: 1.5;
+    color: #196D17;
+    letter-spacing: 0.2;
+}
+
+section.other .inner .other-game h2:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+section.other .inner .other-game p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    text-align: center;
+}
+/*  END section.other */
+
+/*  section.news */
+section.news {
+    /* height: 500px; */
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0px 0 125px;
+}
+
+section.news h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 75px 0 50px;
+    text-align: center;
+    color: #ffffff;
+}
+
+section.news ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    
+}
+section.news ul li {
+    margin: 0 1%;
+    text-align: center;
+}
+section.news ul li.news-img {
+    width: 280px;
+}
+section.news ul li.news-img:nth-child(3) {
+    margin: 0 30px;
+}
+section.news ul li.news-img:nth-child(3) a .news2{
+    margin-bottom: 40px;
+}
+
+
+section.news ul li a {
+    display: block;
+}
+
+section.news ul li.news-img a div {
+    border: 1px solid white;
+    margin: 10px 0 20px;
+}
+section.news ul li.news-img a div:hover {
+    border-color: #78b547;
+}
+
+section.news ul li.news-img a div img {
+    width: 100%;
+}
+
+section.news ul li.news-img.main-news a div {
+    /* width: 120%; */
+    transform: scale(1.2);
+    position: relative;
+}
+
+section.news ul li.news-img.main-news a div::after {
+    content: 'NEWS';
+    font-size: 10px;
+    font-weight: 700;
+
+    position: absolute;
+    right: 50%;
+    bottom: 0%;
+    transform: translate(50%, 50%);
+    padding: 8px 16px 6.4px;
+    background-color: #ffffff;
+}
+
+section.news ul li.news-img a h2 {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.5;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+section.news ul li.news-img p {
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+section.news ul li.news-img a h2:hover {
+    color: #78b547;
+}
+
+section.news ul .other-button {/*버튼*/
+    margin-top: 5%;
+    padding: 0 5px;
+    transition: 0.2s;
+}
+
+section.news .other-button a:hover {
+    background-color: #322f2e;
+    border: 3px solid #ffffff;
+}
+/* END section.news */
+
+
+/* section.overworld */
+section.overworld {
+    margin: 50px 0 150px;
+    height: 630px;
+    position: relative;
+}
+
+section.overworld .overworld-inner {
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.overworld .overworld-inner .overworld-img {
+    width: 470px;
+    height: fit-content;
+}
+
+section.overworld .overworld-inner .overworld-img img {
+    width: 100%;
+}
+
+section.overworld .overworld-inner .overworld-text {
+    margin-left: 30px;
+    width: 450px;
+}
+
+section.overworld .overworld-inner .overworld-text h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 12.8px;
+}
+
+section.overworld .overworld-inner .overworld-text p {
+    width: 100%;
+    line-height: 1.2;
+    font-size: 15px;
+    margin-bottom: 20.8px;
+}
+
+section.overworld .overworld-inner .overworld-text h2 a{
+    display: flex;
+    align-self: center;
+}
+section.overworld .overworld-inner .overworld-text h2 .link-arrow{
+    margin-top: -1px;
+}
+section.overworld .overworld-inner .overworld-text h2 img {
+    margin-right: 10px;
+    width: 15px;
+}
+
+section.overworld .overworld-inner .overworld-text h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #196D17;
+}
+
+
+section.overworld .overworld-outer {
+    background-image: url(../img-LEE/bg-wool-light.png);
+    background-repeat: repeat;
+    position: relative;
+    height: 630px;
+}
+
+section.overworld .overworld-top {
+    background-image: url(../img-LEE/trans-top-darkwool.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100%;
+}
+
+section.overworld .overworld-bottom {
+    background-image: url(../img-LEE/trans-bottom-darkwool.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+/* END section.overworld */
+
+
+/* section.community */
+section.community {
+    background-color: #F8F5F4;
+    padding: 10px 0 20px;
+    width: 100%;
+}
+
+section.community .commu-inner {
+    width: 1140px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+section.community .commu-inner .commu-text {
+    text-align: center;
+}
+
+section.community .commu-inner .commu-text h1 {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 75px 0 0;
+    margin-bottom: 12px;
+}
+section.community .commu-inner .commu-text p {
+    line-height: 1.2;
+    font-size: 15px;
+    margin-bottom: 20.8px;
+}
+section.community .commu-inner .commu-text h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #196D17;
+}
+section.community .commu-inner .commu-text h2 a{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+section.community .commu-inner .commu-text h2 .link-arrow{
+    margin-top: -1px;
+}
+section.community .commu-inner .commu-text h2 img {
+    margin-right: 10px;
+    width: 15px;
+}
+
+section.community .commu-inner ul {
+    padding: 50px 15px 75px;
+    margin: 0 -15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.community .commu-inner ul li {
+    width: 270px;
+    position: relative;
+    overflow: hidden;
+}
+
+section.community .commu-inner ul li .black-box {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    padding: 14px 19.2px 19.2px;
+
+    position: absolute;
+    bottom: -70%;
+
+    color: white;
+    font-size: 18px;
+    text-align: center;
+
+    line-height: 1.4;
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+    z-index: 5;
+}
+
+section.community .commu-inner ul li .black-box::after {
+    content: 'NEWS';
+    padding: 8px 16px;
+    background-color: white;
+
+    color: #1d1e1e;
+    font-size: 13px;
+    font-weight: 700;
+    opacity: 1;
+
+    position: absolute;
+    right: 50%;
+    top: 0;
+    transform: translate(50%, -50%);
+
+}
+
+section.community .commu-inner ul li .black-box h3 {
+    margin: 12.8px 0 16px;
+    font-weight: 700;
+}
+section.community .commu-inner ul li:nth-child(2) h3 {
+    font-size: 16px;
+}
+section.community .commu-inner ul li .black-box p {
+    font-size: 13px;
+    opacity: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+
+section.community .commu-inner ul li:hover .black-box {
+    /* height: 50%; */
+    transition-timing-function: linear;
+    transform: translateY(-20%);
+    padding: 14px 19.2px 19.2px;
+}
+section.community .commu-inner ul li img{
+    transition: 0.3s;
+}
+section.community .commu-inner ul li:hover img {
+    transform: scale(1.1);
+}
+
+section.community .commu-inner ul li:hover .black-box p {
+    opacity: 1;
+}
+
+section.community .more-road {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.community .more-road a {
+    display: block;
+    width: fit-content;
+    height: 100%;
+    color: white;
+}
+section.community .more-road a h3 {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 1px;
+    margin-top: 20px;
+    box-sizing: border-box;
+
+    background-color: #3B8526;
+    border-bottom: 3px solid #2A631C;
+    border-top: 3px solid #6BC349;
+    transition: 0.3s;
+}
+section.community .more-road h3:hover{
+    background-color: #272524;
+    padding: 17px 29px;
+    border: 1px solid white;
+}
+section.community>p {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    line-height: 1.4;
+    font-style: italic;
+    color: #202020;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1199px) {
+    section.other .inner div:nth-child(4){
+        display: none;
+    }
+    section.other {
+        width: 720px;
+    }
+    section.other .inner .other-button {
+        margin-top: 17%;
+    }
+
+    section.news ul .list:nth-child(1){
+        order: 2;
+    } section.news ul .list:nth-child(2){
+        order: 1;
+        transform: scale(0.9);
+        margin-right: 0px;
+    } section.news ul .list:nth-child(3){
+        order: 3;
+    } section.news ul .list:nth-child(4){
+        order: 5;
+        transform: scale(0.9);
+        margin-left: 0px;
+    } section.news ul .list:nth-child(5){
+        order: 4;
+    }
+
+    section.news ul li.news-img:nth-child(3) {
+        margin: 0 40px;
+    }
+
+    section.community .commu-inner{
+        width: 720px;
+    }
+    section.community .commu-inner ul {
+        width: 720px;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 0 auto;
+        /* padding: 0; */
+    }
+    section.community .commu-inner ul li {
+        margin: 5px;
+    }
+    section.community .more-road a h3 {
+        margin-top: 0px;
+    }
+    section.community>p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    br.mo{  /* 모바일 버전에서는 br이 작동X */
+        display: inherit
+    }
+
+    section.visual .visual-div {
+        width: 450px;
+        text-align: center
+    }
+    section.visual a{ 
+        margin: 0 auto;
+    }
+
+    section.other .inner div:nth-child(3){
+        display: none;
+    }
+    section.other {
+        width: 540px;
+        padding: 50px 0 75px;
+    }
+
+    section.other h1 {
+        line-height: 1.4;
+    }
+    section.other .inner .other-button {
+        margin-top: 23%;
+    }
+    section.other .inner {
+        display: flex;
+        padding: 0 25px;
+        justify-content: center;
+    }
+
+    section.news ul .list:nth-child(2){
+        display: none;
+    } section.news ul .list:nth-child(4){
+        display: none;
+    }
+    section.news{
+        width: 500px;
+        margin: 0 auto;
+    }
+    section.news ul .other-button {/*버튼*/
+        margin-top: 14%;
+        padding: 0 8px;
+    }
+
+
+    section.overworld .overworld-inner {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-30%);
+    }
+    
+    section.overworld .overworld-inner .overworld-text {
+        margin-left: 0px;
+        text-align: center;
+    }
+    section.overworld .overworld-inner .overworld-img {
+        margin-bottom: 30px;
+    }
+    
+    section.overworld {
+        height: 740px;
+    }
+    section.overworld .overworld-outer {
+        height: 100%;
+    }
+    section.overworld .overworld-inner .overworld-text h2 a{
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+
+    section.community .commu-inner{
+        width: 100%;
+    }
+    section.community .commu-inner ul {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    /* section.community .commu-inner ul li {
+        width: 100%;
+    } */
+    
+    section.community .more-road a h3 {
+        margin-top: 10px;
+    }
+
+
+
+}
+
+
+
+
+
+

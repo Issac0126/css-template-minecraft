@@ -1,0 +1,622 @@
+/* reset css */
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css');
+@import url(./main.css);
+
+
+/* hanarae main */
+.upper-menu {
+    background-color: #F8F5F4;
+    width: 100vw;
+    height: 60px;
+    border-bottom: 2px solid #dddddd;
+}
+
+.upper-menu ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.upper-menu ul li a {
+    color: #3C8527;
+    margin: 0 10px;
+    line-height: 60px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 8px 9pt;
+    transition: 0.2s;
+}
+
+.upper-menu ul li a:hover {
+    color: #fff;
+    background-color: #3C8527;
+}
+
+
+.hanarae h1 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 12.8px;
+    font-size: 28px;
+}
+
+.the-wild-update {
+    width: 100vw;
+    height: 600px;
+    background: url(../img_ha/thewildupdate.jpg) no-repeat center / cover;
+    background: url(../img_ha/thewildupdate.jpg) no-repeat center / cover;
+}
+
+
+
+.watch-play {
+    width: 100%;
+    height: 200px;
+    background: #F8F5F4;
+    margin: 0 -15px;
+}
+
+.watch-play h1 {
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.watch-play .list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.watch-play .list ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.watch-play .list ul a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #3b8526;
+    text-align: center;
+    color: #fff;
+    margin: 18px;
+    transition: 0.2s;
+}
+
+.watch-play .list ul a:first-child {
+    margin-right: 30px;
+}
+
+.watch-play .list ul a i {
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.watch-play .list ul a:last-child {
+    margin-left: 15px;
+}
+
+.watch-play .list ul a:hover {
+    background: #171615;
+}
+
+.watch-play .list ul li img {
+    width: 160px;
+    height: 90px;
+    margin-right: 15px;
+}
+
+.always-new {
+    width: 100%;
+    height: 600px;
+    background: url(../img_ha/bg-wool-white.png);
+    padding: 50px auto;
+}
+
+.always-new h1 {
+    padding: 50px 0 0;
+}
+
+.always-new p {
+    font-size: 15px;
+    color: #252525;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.always-new .always-list {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+}
+
+.always-new .always-list a {
+    margin-top: 12%;
+}
+
+.always-new .always-list .mypath {
+    width: 55%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #F8F5F4;
+    padding: 30px;
+    margin: 0 30px;
+}
+
+.always-new .always-list .mypath .detail {
+    width: 35%;
+}
+
+.always-new .always-list .mypath .detail h1 {
+    font-size: 28px;
+    line-height: 34px;
+    text-align: left;
+}
+
+.always-new .always-list .mypath .detail p {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 1.3rem;
+}
+
+.always-new .always-list .mypath .detail a {
+    color: #196d17;
+    font-size: 14px;
+}
+
+.always-new .always-list .mypath .detail a i {
+    margin-right: 10px;
+}
+
+
+.always-new .always-list .mypath img {
+    width: 60%;
+    margin-right: 5%;
+}
+
+
+.always-new .always-list .list-arrow {
+    text-decoration: none;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #3C8527;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.always-new .always-list .list-arrow:hover {
+    color: black;
+    background-color: rgb(192, 190, 190);
+}
+
+.always-new .always-bottom {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.always-new .always-bottom a div {
+    width: 12px;
+    height: 12px;
+    background: #AAAAAA;
+    margin: 40px 5px 0;
+}
+
+.always-new .always-bottom a:first-child div {
+    background: #555555;
+}
+
+.always-new .always-bottom a:hover div {
+    background: #555555;
+}
+
+
+
+.make-play {
+    width: 100%;
+    height: 100%;
+    background: url(../img_ha/modes-minecraft-create-bg.jpg) repeat-x;
+    background-size: contain;
+}
+
+.make-play .background {
+    background: url(../img_ha/modes-minecraft-create.jpg) no-repeat center;
+    background-position-y: -200px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.make-play .background ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 40px 0;
+}
+
+.make-play .background ul li {
+    padding: 8px 10px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.make-play .background ul li:first-child {
+    background: #F8F5F4;
+}
+
+.make-play .background p {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 300px 20px;
+    line-height: 1.2;
+}
+
+
+.how {
+    background: url(../img_ha/bg-wool-white.png);
+    margin-bottom: 50px;
+}
+
+.how .how-top-top {
+    height: 180px;
+    background: url(../img_ha/bg-wool-dark.png)
+}
+
+.how .how-top-top h1 {
+    color: #fff;
+    padding: 80px 15px;
+}
+
+.how .how-top-bottom {
+    height: 100px;
+    background: url(../img_ha/trans-top-darkwool.png) repeat-x;
+}
+
+.how .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 50px;
+}
+
+.how .row .col {
+    display: flex;
+    margin: 20px auto;
+    width: 70%;
+    justify-content: center;
+    align-content: center;
+}
+
+.how .row .col img {
+    scale: 0.7;
+}
+
+.how .row .col .row-align {
+    width: 50%;
+    height: 150px;
+    background: #fff;
+    padding: 30px;
+    text-align: left;
+    margin-top: 15%;
+}
+
+.how .row .col .row-align h1 {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.how .row .col .row-align p {
+    font-size: 16px;
+    padding-top: 30px;
+    line-height: 1.4;
+}
+
+.how .how-bottom-top {
+    height: 100px;
+    background: url(../img_ha/trans-bottom-darkwool.png) repeat-x;
+}
+
+.how .how-bottom-bottom {
+    height: 180px;
+    background: url(../img_ha/bg-wool-dark.png)
+}
+
+.gamepass {
+    background-color: #202020;
+    padding: 70px;
+}
+
+.gamepass .img {
+    width: 80%;
+    height: 400px;
+    background: url(../img_ha/intro12.png) no-repeat center;
+    margin: 0 auto;
+}
+
+.gamepass h1 {
+    padding: 50px 0;
+    color: #fff;
+}
+
+.gamepass .now-join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gamepass .now-join a {
+    display: block;
+    width: fit-content;
+    height: 100%;
+    color: white;
+}
+
+.gamepass .now-join a h3 {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 1px;
+    box-sizing: border-box;
+
+    background-color: #3B8526;
+    border-bottom: 3px solid #2A631C;
+    border-top: 3px solid #6BC349;
+}
+
+.gamepass .now-join h3:hover {
+    background-color: #272524;
+    padding: 17px 29px;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+.world-wide h1 {
+    padding: 50px 0;
+}
+
+.world-wide .row {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.world-wide .row .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.world-wide .row .col .row-align {
+    width: 50%;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.world-wide .row .col .row-align h1 {
+    padding: 25px 0;
+    text-align: left;
+}
+
+.world-wide .row .col .row-align p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+
+.world-wide .row .col .wide-img img {
+    width: 400px;
+    height: 250px;
+    margin-top: 50px;
+}
+
+.world-wide .row .col .row-align a {
+    color: #196d17;
+    font-weight: 700;
+}
+
+.world-wide .row .col .row-align a img {
+    margin-right: 5px;
+}
+
+.wanna-play {
+    background: #D8D8D8;
+}
+
+.wanna-play div {
+    width: 1100px;
+    height: 455px;
+    background: url(../img_ha/lots-of-device.png) no-repeat center;
+    margin: 0 auto;
+}
+
+.wanna-play h1 {
+    padding-bottom: 10px;
+}
+
+.wanna-play p {
+    text-align: center;
+    padding-bottom: 100px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+/* 반응형 */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        width: 768px;
+    }
+
+    .watch-play .list ul li:nth-child(4),
+    .watch-play .list ul li:nth-child(5) {
+        display: none;
+    }
+
+    .watch-play {
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .watch-play h1 {
+        margin-top: 0;
+    }
+
+    .always-new .always-list .mypath {
+        flex-direction: column;
+    }
+
+    .always-new .always-list .mypath img {
+        margin: 0 auto;
+    }
+
+    .always-new .always-list .mypath .detail {
+        text-align: center;
+        width: 100%;
+    }
+
+    .always-new .always-list .mypath .detail h1 {
+        text-align: center;
+    }
+
+    .make-play .background p {
+        width: 80%;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .how .row .col {
+        flex-direction: column;
+    }
+
+    .how .row .col .row-align {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .how .row .col:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .gamepass {
+        padding: 70px 0;
+    }
+
+    .gamepass .img {
+        width: 690px;
+        height: 248px;
+        margin: 0 auto;
+        background: url(../img_ha/intro12.png) center / cover;
+    }
+
+
+    .world-wide .row .col .row-align {
+        padding: 0;
+    }
+
+    .world-wide .row .col .wide-img img {
+        scale: 0.8;
+        margin-top: 0;
+    }
+
+    .world-wide .row .col .row-align h1 {
+        font-size: 20px;
+    }
+
+    .world-wide .row .col .row-align p {
+        font-size: 12px;
+    }
+
+    .world-wide .row .col .row-align a {
+        font-size: 12px;
+    }
+
+    .wanna-play div {
+        width: 700px;
+    }
+
+    .footer-container .brandinfo .copyright {
+        display: none;
+    }
+
+    #copyright2 {
+        display: block;
+    }
+
+    .brandinfo .logocopy .logos {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        scale: 0.8;
+    }
+    .brandinfo .logocopy .logos .mojang {
+        margin: 0 auto 20px;
+    }
+
+    .footer-container .brandinfo .logocopy {
+        margin-top: -20px;
+    }
+
+    .footer-container .navlists .navlists-column img {
+        scale: 0.8;
+    }
+
+    .bottom-footer {
+        display: none;
+    }
+
+    .bottom-footer2 {
+        background: #313131;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-content: start;
+        color: white;
+    }
+
+    .bottom-footer2 .branding {
+        padding: 20px;
+        display: flex;
+        position: relative;
+    }
+
+    .bottom-footer2 .branding-nav ul {
+        display: flex;
+        margin-left: 20px;
+    }
+    .bottom-footer2 .branding-nav ul li {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .bottom-footer2 .branding .branding-logo img{
+        scale: 0.2;
+        position: absolute;
+        right: -200px;
+        top: -30px;
+    }
+
+    footer .social-footer .follow li {
+        margin: 30px 30px;
+    }
+
+}
